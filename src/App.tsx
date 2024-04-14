@@ -83,14 +83,18 @@ function App() {
       maxWidth: "800px",
       display: "flex",
       flexDirection: "column",
-      gap: "2rem",
+      gap: "1rem",
       margin: "0 auto",
       alignItems: "center",
     }}>
+      <div style={{textAlign: 'center',margin: '10px 0',}}>
+      <h1 style={{fontSize: '3em',color: 'darkblue',fontWeight: 'bold'}}>Hangman Game</h1>
+      <p style={{fontSize: '2em', color: 'gray',}}>Guess the word before the man is hanged!</p>
+    </div>
 
 <div style={{fontSize: "2rem", textAlign: "center", padding: "0.5rem",  backgroundColor: isWinner ? "green" : isLoser ? "red" : "transparent"}}>
-    {isWinner && "You Win! Refresh to try again"}
-    {isLoser && "Nice Try! Refresh to try again"}
+    {isWinner && "You Win! Refresh the page or Press Enter to try again"}
+    {isLoser && "You Loss! Refresh the page or Press Enter to try again"}
 </div>
 
 
