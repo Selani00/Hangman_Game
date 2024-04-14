@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react"
 import words from './wordList.json'
-import { HangmanDrawing } from "./HangmanDrawing"
-import { HangmanWord } from "./HangmanWord"
-import { Keyboard } from "./Keyboard"
+import { HangmanDrawing } from "./HangmanDrawing.tsx"
+import { HangmanWord } from "./HangmanWord.tsx"
+import { Keyboard } from "./Keyboard.tsx"
 
 function getWord(){
   // This will give the random word from the list
